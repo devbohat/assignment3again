@@ -1,0 +1,73 @@
+#question1
+#converting decimal to binary by taking user input
+#select input [1] foer binary
+#let's start the program
+
+
+decimal = int(input("enter decimal value: \n"))
+convert = int(input("convert into: [1]binary "))
+
+
+if convert == 1:
+        print("converted to binary \n", bin(decimal))
+else:
+
+        print("please review your input")        
+        
+      
+ #question2
+ evaluate = eval(input("enter the expression you want to evaluate"))
+print("the value of this expression is",evaluate)
+
+ #question3
+#(a)
+a=3
+b=4
+c=5
+sum1=(a+b)*(c)
+print(sum1)
+
+#(b) x=(n*(n-1))/2
+
+#(c) 4*math.pi*r*r
+#(d) math.sqrt(r*(math.cos(a)**2)+r*(math.sin(b)**2))
+#(e) (y2-y1)/(x2-x1)
+
+
+ #question4
+ #Answer of question 4
+#     a) range(5)                      -> [0, 1, 2, 3, 4]
+#     b) range(3,5)                    -> [3, 4]
+#     c) range(4,13,3)                 -> [4, 7, 10]
+#     d) range(15,5,-2)                -> [15, 13, 11, 9, 7]
+#     e) range(5,3)                    -> []
+
+
+
+#question5
+ print("This program computes the molecular weight of carbohydrates [grams/mole]")
+
+    # allow the user to enter its own carbohydrate_structure - m and n
+    carbohydrate_structure = input("Enter the specific carbohydrate in the form Cm(H2O)n: ")
+    carbon_atoms = int(carbohydrate_structure[1])
+    hydrogen_atoms = int(carbohydrate_structure[-1]) * 2
+    oxygen_atoms = int(carbohydrate_structure[-1])
+
+    # enter the individual weights of the atoms [grams/mole]
+    carbon_weight = 12.0107
+    hydrogen_weight = 1.00794
+    oxygen_weight = 15.9994
+
+    # compute the molecular weight of the carbohydrate
+    molecular_weight = carbon_atoms * carbon_weight + hydrogen_atoms * hydrogen_weight + oxygen_atoms * oxygen_weight
+    print()
+    print(f"The molecular weight of the {carbohydrate_structure} carbohydrate is {format(molecular_weight, ',.5f')}")
+
+
+# call main
+if __name__ == '__main__':
+    main()
+    
+    
+
+        
