@@ -2,17 +2,9 @@
 #converting decimal to binary by taking user input
 #select input [1] foer binary
 #let's start the program
-
-
-decimal = int(input("enter decimal value: \n"))
-convert = int(input("convert into: [1]binary "))
-
-
-if convert == 1:
-        print("converted to binary \n", bin(decimal))
-else:
-
-        print("please review your input")        
+a=int(input())
+a=bin(a)
+print(a)
         
       
  #question2
@@ -64,9 +56,7 @@ print(sum1)
     print(f"The molecular weight of the {carbohydrate_structure} carbohydrate is {format(molecular_weight, ',.5f')}")
 
 
-# call main
-if __name__ == '__main__':
-    main()
+
     
     
 
